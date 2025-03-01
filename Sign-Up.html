@@ -11,12 +11,21 @@
     <div class="container">
         <h2>Sign Up</h2>
         <form>
-            <input type="text" placeholder="Name" required><br><br>
-            <input type="email" placeholder="Email" required><br><br>
-            <input type="number" placeholder="Age" required><br><br>
-            <input type="password" placeholder="Password" required><br><br>
-            <button class="btn">Sign Up</button><br><br>
+            <input type="text" placeholder="Name" autocomplete="on" required><br><br>
+            <input type="email" placeholder="Email" autocomplete="on" required><br><br>
+            <input list="browsers" name="browser" placeholder="Age"><br><br>
+                <datalist id="browsers">
+                    <option value="18-24">
+                    <option value="25-31">
+                    <option value="32-50">
+                    <option value="50+">
+                </datalist>
+            <input type="password" placeholder="Password" minlength="8" maxlength="16" required><br><br>
+            <input type="reset" value="Reset">
+            <!--<button class="btn">Sign Up</button><br><br>-->
+            <input type="submit" value="Sign Up"><br><br>
         </form>
+        <p>-----------------------------------------</p>
         <p class="bottom-text">Already have an account? <a href="Login.html">Log In</a></p>
     </div>
 </body>
